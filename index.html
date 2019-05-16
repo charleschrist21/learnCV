@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+        
+    <frameset>
+            
+    <div class="frame">
+           
+            <div class="Rectangle-3">
+                    <div class="Rectangle-31"></div>
+                </div>
+            <div>
+                    <img src="phone-receiver.png" class="icphone">
+                    <p class="numberphone">081991538410</p>
+                    <img src="email.png" class="icmail">
+                    <p class="mail">beebeewijaya@gmail.com</p>
+                 </div>
+            <div class="frame2">
+                    <p class="detail">My name is Harry Potter, I’m a Wizard. Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                    <div>
+                    <div class="Ellipse"></div>
+                    <p class="judul">EDUCATION</p> 
+                    <ul class="jdedu">
+                        <li class="edu">
+                            SMK Negeri 1
+                        </li>
+                        <li class="isiedu">
+                            2015-2018
+                        </li>
+                        <li class="edu">
+                                BootCamp Arkademy
+                            </li>
+                            <li class="isiedu">
+                                2018-now
+                            </li>
+                    </ul>
+                    </div>
+                    <div class="Ellipse2"></div> 
+                    <p class="judul2">EXPERIENCE</p>
+                    <ul class="jdexp">
+                        <li class="thexp1">2017-2017</li>
+                        <li class="thexp">2018-now</li>
+                        <li class="thexp">2018-now</li>
+                    </ul> 
+                    <ul class="isiexp">
+                        <li class="expis1">Graphic Designer</li>
+                        <li class="expl">Koran Tanjungpinangpos</li>
+                        <li class="expis">Front-end Engineer</li>
+                        <li class="expl">Arkademy Tech</li>
+                        <li class="expis">UI Designer</li>
+                        <li class="expl">Freelancing</li>
+                    </ul>
+                    <div class="Ellipse3"></div> 
+                    <p class="judul3">ACHIEVEMENT</p> 
+                    <ul class="acvlist">
+                        <li class="acv1">Winner Dota 2 Award</li>
+                        <li class="acv2">N.E.T Internet Cafe</li>
+                        <li class="acv3">2017</li>
+                        <li class="acv1">Web Design Competition</li>
+                        <li class="acv2">SMK Negeri 1 Saja</li>
+                        <li class="acv3">2018</li>
+                        <li class="acv1">UID Competititon</li>
+                        <li class="acv2">Dribble Awards</li>
+                        <li class="acv3">2018</li>
+                    </ul>
+                    <div class="Ellipse4"></div> 
+                    <p class="judul4">TOP SKILL</p> 
+                    <ul class="skillist">
+                        <li class="skill">HTML</li>
+                        <li class="skill">CSS</li>
+                        <li class="skill">Java</li>
+                        <li class="skill">Python</li>
+                    </ul>
+                <div class="skillbar">
+                    <div class="htmlbox"></div>
+                    <div class="cssbox"></div>
+                    <div class="javabox"></div>
+                    <div class="pythonbox"></div>
+                </div>
+                <div class="persenskill">
+                    <p class="persen">90%</p>
+                    <p class="persen">80%</p>
+                    <p class="persen">70%</p>
+                    <p class="persen">60%</p>
+                </div>
+            </div>
+            
+        <div class="Rectangle">
+                <hr class="rounded"/>
+                <hr class="rounded1"/>
+                <hr class="rounded2"/>
+                <hr class="rounded3"/>
+                <!-- <hr class="rounded5"/> -->
+                <img src="1.jpeg" class="foto">
+               
+                <div class="Rectangle-2"></div>
+                <h1 class="Arka">Arka</h1>
+                <h2 class="Product-Designer">Product Designer</h2>         
+        </div>
+        <img src="border.png" class="borderqr">
+        <p class="pp">Scan for Portofolio</p>
+        <div class="qrbor">
+        <div class="qr" id="qrcode"></div>
+        </div>
+         </div>
+        
+</frameset>
+
+<script src="./qrcode.js"></script>
+        <script>
+          var qrcode = new QRCode("qrcode", {
+            text: "",
+            width: 100,
+             height: 100,
+            colorDark : "#17447D",
+            colorLight : "#ffffff",
+            correctLevel : QRCode.CorrectLevel.H
+          });
+      
+          qrcode.clear(); // clear the code.
+          qrcode.makeCode("kepo ya lu, hehehe"); // make another code.
+        </script>  
+</body>
+</html>
